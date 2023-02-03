@@ -6,13 +6,14 @@ CKEditor 5 build based on ClassicEditor con otras hierbas
   especialmete echo para dar soporte al <iframe> que es precisamente lo que buscaba.
 
 
-OJO este es el fuente para poder compilarlo a medida
+## OJO
+Este es el fuente para poder compilarlo a medida
 si quieres usar solo la libreria ckeditor.js
 solo debes descargar la carpeta build alli esta lo necesario.
 
 para ver el demo ejecuta run the index.html
 
-instruciones
+## Instruciones
 
 se clona
 asegurarse de tener nodejs v18 o mayor
