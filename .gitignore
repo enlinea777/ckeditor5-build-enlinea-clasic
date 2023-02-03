@@ -5,3 +5,4 @@ yarn.lock
 build/*
 !build/index.html
 !build/sample.jpg
+!build/ckeditor.js
