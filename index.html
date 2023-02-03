@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CKEditor 5 Quick start guide</title>
+    </head>
+    <body>
+      <div id="toolbar-container"></div>
+        <div id="editor">
+            <p>The editor content goes here.</p>
+        </div>
+
+        <div id="editor2">
+          <p>The editor content goes here.</p>
+        </div>
+
+        <script src="build/ckeditor.js"></script>
+    </body>
+
+
+    <script>
+      // en lang
+      CKEditor.create(document.querySelector('#editor')).then(
+        (editor) => {
+          window.editor = editor
+        },
+      )
+      
+    </script>
+
+
+</html>

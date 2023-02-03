@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CKEditor 5 Jarvis's build – sample page</title>
+    <style>
+      body {
+        max-width: 800px;
+        margin: 20px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CKEditor 5 Jarvis's build – sample page</h1>
+
+    <h2>English</h2>
+    <div id="editor-en">
+      <h2>Jarvis's Build Sample</h2>
+
+      <p>
+        This is an instance of the
+        <a href="https://github.com/jarvisniu/ckeditor5-build-jarvis"
+          >jarvis editor build</a
+        >.
+      </p>
+
+      <figure class="image">
+        <img src="./sample.jpg" alt="Autumn fields" />
+      </figure>
+
+      <p>
+        You can use this sample to validate whether your
+        <a
+          href="https://ckeditor.com/docs/ckeditor5/latest/builds/guides/development/custom-builds.html"
+          >custom build</a
+        >
+        works fine.
+      </p>
+    </div>
+
+    <h2>中文 (Chinese)</h2>
+    <div id="editor-zh">
+      <h2>Jarvis's Build Sample</h2>
+
+      <p>
+        This is an instance of the
+        <a href="https://github.com/jarvisniu/ckeditor5-build-jarvis"
+          >jarvis editor build</a
+        >.
+      </p>
+
+      <figure class="image">
+        <img src="./sample.jpg" alt="Autumn fields" />
+      </figure>
+
+      <p>
+        You can use this sample to validate whether your
+        <a
+          href="https://ckeditor.com/docs/ckeditor5/latest/builds/guides/development/custom-builds.html"
+          >custom build</a
+        >
+        works fine.
+      </p>
+    </div>
+
+    <script src="./ckeditor.js"></script>
+    <script src="./translations/zh-cn.js"></script>
+    <script>
+      // en lang
+      JarvisEditor.create(document.querySelector('#editor-en')).then(
+        (editor) => {
+          window.editor = editor
+        },
+      )
+      // zh lang
+      JarvisEditor.create(document.querySelector('#editor-zh'), {
+        language: 'zh-cn',
+        mention: {
+          feeds: [
+            {
+              marker: '@',
+              feed: ['@Barney', '@Lily', '@Jarvis', '@Robin', '@Ted'],
+              minimumCharacters: 0,
+            },
+          ],
+        },
+      }).then((editor) => {
+        window.editor = editor
+      })
+    </script>
+  </body>
+</html>
