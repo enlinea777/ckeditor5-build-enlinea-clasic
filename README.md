@@ -1,7 +1,5 @@
 # ckeditor5-build-enlinea-clasic
 
-![This build]
-![Fork](https://badge.fury.io/js/ckeditor5-build-jarvis.svg)
 ![Official](https://badge.fury.io/js/ckeditor5.svg)
 
 CKEditor 5 build based on ClassicEditor con otras hierbas
@@ -12,27 +10,28 @@ OJO este es el fuente para poder compilarlo a medida
 si quieres usar solo la libreria ckeditor.js
 solo debes descargar la carpeta build alli esta lo necesario.
 
-[Demo] run the index.html
+para ver el demo ejecuta run the index.html
 
 instruciones
 
 se clona
-asegurarse de tener nodejs 18 o mayor
+asegurarse de tener nodejs v18 o mayor
 
 entrar a la carpeta clonada
 
 en la consola instalas npm
 
-- npm install
-
-
+```
+npm install
+```
 luego:
-
-- npm update
-
+```
+npm update
+```
 despues:
-
-- npm run build
+```
+npm run build
+```
 
 ## Features
 
@@ -95,6 +94,9 @@ Official list: [https://github.com/ckeditor/ckeditor5#features](https://github.c
 - `@ckeditor/ckeditor5-typing`
 - `@ckeditor/ckeditor5-undo`
 - `@ckeditor/ckeditor5-word-count`
+- `@ckeditor/ckeditor5-source-editing`
+- `@ckeditor/ckeditor5-html-support`
+
 
 ### Not included feature plugins
 
