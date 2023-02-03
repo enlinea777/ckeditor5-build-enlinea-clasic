@@ -91,6 +91,7 @@
     "@ckeditor/ckeditor5-build-decoupled-document": "^36.0.0",
     "@ckeditor/ckeditor5-ckfinder": "^36.0.0",
     "@ckeditor/ckeditor5-dev-translations": "^33.0.0",
-    "@ckeditor/ckeditor5-editor-decoupled": "^36.0.0"
+    "@ckeditor/ckeditor5-editor-decoupled": "^36.0.0",
+    "@ckeditor/ckeditor5-html-support": "^36.0.0"
   }
 }

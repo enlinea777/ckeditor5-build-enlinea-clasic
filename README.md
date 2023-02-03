@@ -5,6 +5,7 @@
 ![Official](https://badge.fury.io/js/ckeditor5.svg)
 
 CKEditor 5 build based on ClassicEditor con otras hierbas
+  especialmete echo para dar soporte al <iframe> que es precisamente lo que buscaba.
 
 [Demo] run the index.html
 
@@ -23,7 +24,6 @@ en la consola instalas npm
 luego:
 
 - npm update
-
 
 despues:
 

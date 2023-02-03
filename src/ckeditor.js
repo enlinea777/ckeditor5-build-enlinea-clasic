@@ -58,6 +58,7 @@ import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleu
 import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties'
 import TableCellProperties from '@ckeditor/ckeditor5-table/src/tablecellproperties'
 import SourceEditing from '@ckeditor/ckeditor5-source-editing/src/sourceediting'
+import GeneralHtmlSupport from '@ckeditor/ckeditor5-html-support/src/generalhtmlsupport';
 
 
 
@@ -66,6 +67,8 @@ export default class JarvisEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
 JarvisEditor.builtinPlugins = [
+  
+  GeneralHtmlSupport,
   Essentials,
   UploadAdapter,
   Autoformat,
@@ -201,6 +204,16 @@ JarvisEditor.defaultConfig = {
       'tableProperties',
       'tableCellProperties',
     ],
+  },
+  htmlSupport: {
+    allow: [
+      {
+      name: 'iframe',
+      attributes: true,
+      classes: true,
+      styles: true
+      }
+    ]
   },
   // This value must be kept in sync with the language defined in webpack.config.js.
   language: 'en',
